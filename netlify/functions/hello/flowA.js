@@ -1,6 +1,6 @@
-// const flowB = require('./flowB.cjs'); 
-import { flowB } from './flowB.cjs';
-export const flowA = {
+const flowB = require('./flowB.cjs'); 
+
+const flowA = {
     startFlowA: async function (num) {
         console.log(`[FlowA] Starting process with number: ${num}`);
         // await new Promise(resolve => setTimeout(resolve, 1000));
@@ -40,3 +40,4 @@ export const flowA = {
     }
 };
 
+module.exports = { flowA };

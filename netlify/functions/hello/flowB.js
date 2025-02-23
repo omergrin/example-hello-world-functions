@@ -1,5 +1,5 @@
 let i =0;
-export const flowB = {
+const flowB = {
     triggerFlowB: function (num) {
         console.log(`[FlowB] Received number: ${num}, processing...`);
         return this.iterateData(num);
@@ -41,3 +41,4 @@ export const flowB = {
     }
 };
 
+module.exports = { flowB };
