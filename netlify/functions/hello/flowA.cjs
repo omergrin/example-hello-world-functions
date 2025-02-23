@@ -1,4 +1,4 @@
-const flowB = require('./flowB.js'); // ✅ Use require()
+const flowB = require('./flowB.cjs'); // ✅ Use require()
 
 const flowA = {
     startFlowA: async function (num) {
