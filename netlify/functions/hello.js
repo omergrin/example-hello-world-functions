@@ -5,6 +5,11 @@
 // You can develop and deploy serverless functions right here as part
 // of your site. Netlify Functions will handle the rest for you.
 
+
+(async () => {
+    await import('hud-sdk/register');
+  })();
+  
 const flowA = require('./hello/flowA.js');
 
 
