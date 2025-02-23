@@ -7,14 +7,14 @@
 
 
   
-// const flowA = require('./flowA.cjs');
+const flowA = require('./flowA.cjs');
 
 
-// exports.handler = async event => {
-//     const subject = event.queryStringParameters.name || 'World'
-//     const res = await flowA.startFlowA(5);
-//     return {
-//         statusCode: 200,
-//         body: `Hello ${subject}! result: ${res}, ${process.env.AWS_LAMBDA_FUNCTION_MEMORY_SIZE}, ${process.env.AWS_LAMBDA_RUNTIME_API}`,
-//     }
-// }
+exports.handler = async event => {
+    const subject = event.queryStringParameters.name || 'World'
+    const res = await flowA.startFlowA(5);
+    return {
+        statusCode: 200,
+        body: `Hello ${subject}! result: ${res}, ${process.env.AWS_LAMBDA_FUNCTION_MEMORY_SIZE}, ${process.env.AWS_LAMBDA_RUNTIME_API}`,
+    }
+}
