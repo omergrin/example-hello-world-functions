@@ -1,5 +1,5 @@
-const flowB = require('./flowB.cjs'); // ✅ Use require()
-
+// const flowB = require('./flowB.cjs'); 
+import { flowB } from './flowB.cjs';
 export const flowA = {
     startFlowA: async function (num) {
         console.log(`[FlowA] Starting process with number: ${num}`);

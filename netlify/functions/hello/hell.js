@@ -7,8 +7,8 @@
 
 
   
-const flowA = require('./flowA.cjs');
-
+// const flowA = require('./flowA.cjs');
+import { flowA } from './flowA.cjs';
 
 export const handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
