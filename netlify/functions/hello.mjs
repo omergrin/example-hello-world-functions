@@ -4,7 +4,7 @@ import('hud-sdk/register').then(({ register }) => {
 
     // const require = createRequire(import.meta.url);
 
-    require('./hello/hell.js')
+    require('./hello/hell.cjs')
 
 }
 )
