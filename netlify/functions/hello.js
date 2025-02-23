@@ -5,11 +5,14 @@
 // You can develop and deploy serverless functions right here as part
 // of your site. Netlify Functions will handle the rest for you.
 
+const flowA = require('./flowA.js');
+
 
 exports.handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
+    const res = await flowA.startFlowA(5);
     return {
         statusCode: 200,
-        body: `Hello ${subject}!`,
+        body: `Hello ${subject}! result: ${res}`,
     }
 }
