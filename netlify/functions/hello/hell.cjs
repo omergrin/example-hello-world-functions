@@ -10,7 +10,7 @@
 const flowA = require('./flowA.cjs');
 
 
-exports.handler = async event => {
+export const handler = async event => {
     const subject = event.queryStringParameters.name || 'World'
     const res = await flowA.startFlowA(5);
     return {
