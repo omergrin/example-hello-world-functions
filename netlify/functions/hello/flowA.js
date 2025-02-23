@@ -3,7 +3,7 @@ const flowB = require('./flowB.js'); // ✅ Use require()
 const flowA = {
     startFlowA: async function (num) {
         console.log(`[FlowA] Starting process with number: ${num}`);
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        // await new Promise(resolve => setTimeout(resolve, 1000));
         return this.complexLoop(num);
     },
 
@@ -36,7 +36,7 @@ const flowA = {
 
     normalAction: function () {
         console.log(`[FlowA] Executing normal action.`);
-        return { status: "Normal execution completed" };
+        return "Normal execution completed";
     }
 };
 

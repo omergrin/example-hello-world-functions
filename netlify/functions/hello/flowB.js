@@ -31,7 +31,7 @@ const flowB = {
         for (let i = 1; i <= num; i++) {
             product *= i % 3 === 0 ? 2 : 1;  // Conditional inside loop
         }
-        return { status: "Advanced processing done", result: product };
+        return `Advanced processing completed with product: ${product}`;
     },
 
     finalize: function (count) {
