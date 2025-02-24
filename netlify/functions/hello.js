@@ -1,7 +1,9 @@
-await import('hud-sdk/register')
-import { flowA } from './hello/flowA.js';
+// await import('hud-sdk/register')
+// import { flowA } from './hello/flowA.js';
 
-export async function handler(event) {
+const flowA = require('./flowA.js');
+
+async function handler(event) {
 
     const subject = event.queryStringParameters.name || 'World'
     const res = await flowA.startFlowA(5);
@@ -11,6 +13,7 @@ export async function handler(event) {
     }
 }
 
+module.exports = { handler }; 
 
 
 // (async () => {
