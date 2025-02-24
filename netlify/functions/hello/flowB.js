@@ -27,11 +27,12 @@ const flowB = {
 
     advancedProcessing: function (num) {
         console.log(`[FlowB] Performing advanced processing on ${num}`);
+        i=i+1
         let product = 1;
         for (let i = 1; i <= num; i++) {
             product *= i % 3 === 0 ? 2 : 1;  // Conditional inside loop
         }
-        return `Advanced processing completed with product: ${product}`;
+        return `Advanced processing completed with product: ${i}`;
     },
 
     finalize: function (count) {
