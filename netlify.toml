@@ -2,11 +2,12 @@
     publish = "public"
     command = "echo No build command"
     node_bundler = "esbuild"
-    external_node_modules = ["hud-sdk"]
 
 [dev]
     publish = "public"
     node_bundler = "esbuild"
+
+[functions]
     external_node_modules = ["hud-sdk"]
 
 [[redirects]]
