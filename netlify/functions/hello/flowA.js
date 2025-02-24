@@ -40,4 +40,4 @@ const flowA = {
     }
 };
 
-module.exports = { flowA }; 
+module.exports = flowA; 

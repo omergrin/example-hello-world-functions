@@ -4,8 +4,10 @@
     "description": "A site to show a hello world example of using Netlify Functions",
     "author": "Netlify",
     "license": "ISC",
-    "type": "module",
     "dependencies": {
         "hud-sdk": "^1.4.2"
+    },
+    "devDependencies": {
+        "netlify-cli": "^19.0.0"
     }
 }

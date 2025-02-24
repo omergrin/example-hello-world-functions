@@ -1,4 +1,4 @@
-// await import('hud-sdk/register')
+require('hud-sdk')
 // import { flowA } from './hello/flowA.js';
 
 const flowA = require('./hello/flowA.js');
