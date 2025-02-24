@@ -1,5 +1,5 @@
 await import('hud-sdk/register')
-import { flowA } from './flowA.cjs';
+import { flowA } from './hello/flowA.js';
 
 export async function handler(event) {
 
