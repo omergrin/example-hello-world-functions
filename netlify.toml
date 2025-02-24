@@ -2,10 +2,12 @@
     publish = "public"
     command = "echo No build command"
     node_bundler = "zisi"
+    external_node_modules = ["hud-sdk"]
 
 [dev]
     publish = "public"
     node_bundler = "zisi"
+    external_node_modules = ["hud-sdk"]
 
 [[redirects]]
     from = "/api/*"
