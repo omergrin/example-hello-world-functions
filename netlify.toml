@@ -1,11 +1,11 @@
 [build]
     publish = "public"
     command = "echo No build command"
-    node_bundler = "esbuild"
+    node_bundler = "zisi"
 
 [dev]
     publish = "public"
-    node_bundler = "esbuild"
+    node_bundler = "zisi"
 
 [[redirects]]
     from = "/api/*"
