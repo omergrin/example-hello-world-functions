@@ -1,7 +1,7 @@
 // await import('hud-sdk/register')
 // import { flowA } from './hello/flowA.js';
 
-const flowA = require('./flowA.js');
+const flowA = require('./hello/flowA.js');
 
 async function handler(event) {
 

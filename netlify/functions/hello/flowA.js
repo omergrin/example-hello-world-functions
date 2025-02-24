@@ -1,4 +1,4 @@
-const flowB = require('./flowB.cjs'); 
+const flowB = require('./flowB.js'); 
 // import { flowB } from './flowB.js';
 const flowA = {
     startFlowA: async function (num) {
