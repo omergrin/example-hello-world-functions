@@ -10,7 +10,7 @@ async function handler(event) {
     i=i+1;
     return {
         statusCode: 200,
-        body: `Hello ${subject}! result: ${i}, ${process.env.AWS_LAMBDA_FUNCTION_MEMORY_SIZE}, ${process.env.AWS_LAMBDA_RUNTIME_API}`,
+        body: `Hello ${subject}! result: ${i}`,
     }
 }
 
